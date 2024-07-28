@@ -1,113 +1,152 @@
+import Bids from "@/components/Bids";
 import Image from "next/image";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="  gap-8 overflow-hidden relative container mx-auto  xl:flex-row flex-col flex">
+      <div className=" min-h-[80vh] pt-8 xl:pt-0  flex space-y-8 xl:space-y-0 flex-col justify-between">
+        <div className=" space-y-5">
+          <Image src={"/logo.svg"} alt="logo" width={92} height={70} />
+          <button className=" bg-primary rounded-full h-10 px-9 inline-flex items-center text-2xl font-semibold">
+            Treasury
+          </button>
         </div>
+        <div className="xl:top-[61px] xl:left-[19%]  xl:absolute space-y-3">
+          <span className=" inline-flex bg-[#D9D9D90D]/5 rounded-full border border-white/10 px-6 py-2 text-sm font-semibold text-primary">
+            July 10-2024
+          </span>
+          <h4 className=" text-6xl xl:text-8xl font-extrabold text-primary">
+            Waterbear <br />
+            1175
+          </h4>
+        </div>
+        <Bids />
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className=" min-h-[80vh] space-y-5 xl:space-y-0 flex-1">
+        <div className="flex xl:pt-20 pb-3 items-center justify-end gap-3">
+          <button
+            disabled
+            className=" w-12  disabled:opacity-50 h-12 bg-primary rounded-full flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M20 12H4M4 12L10 6M4 12L10 18"
+                stroke="black"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+          <button className=" w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M4 12H20M20 12L14 6M20 12L14 18"
+                stroke="black"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div className=" mx-auto block">
+          <Image
+            src={"/images/image_1546-removebg 1.svg"}
+            width={416}
+            height={384}
+            className=" block mx-auto"
+            alt="image_1546-removebg 1"
+          />
+        </div>
+        <div className="  pt-3 inline-flex  justify-center  w-full">
+          <div
+            style={{
+              borderRadius: "32px",
+              border: "1px solid rgba(194, 203, 173, 0.10)",
+              background:
+                "linear-gradient(104deg, rgba(0, 0, 0, 0.04) 2.92%, rgba(0, 0, 0, 0.04) 28.75%, rgba(115, 115, 115, 0.02) 90.09%)",
+              backdropFilter: "blur(12.5px)",
+            }}
+            className="  p-5  w-full xl:w-auto space-y-5"
+          >
+            <div className=" grid sm:grid-cols-2 gap-4">
+              <div
+                style={{
+                  borderRadius: "24px",
+                  border: "1px solid rgba(163, 214, 13, 0.10)",
+                  background: "rgba(255, 255, 255, 0.10)",
+                  backdropFilter: "blur(12.5px)",
+                }}
+                className=" px-5 pt-3 pb-3"
+              >
+                <h4 className=" text-3xl font-semobold text-white/85]">
+                  WaterBear 1169
+                </h4>
+                <div className=" inline-flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={40}
+                    height={40}
+                    viewBox="0 0 40 40"
+                    fill="none"
+                  >
+                    <circle cx={20} cy={20} r="16.6667" fill="#070807" />
+                    <path
+                      d="M14.1667 20.8334L17.5 24.1667L25.8333 15.8334"
+                      stroke="white"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <span className=" text-4xl font-bold text-white">1.73</span>
+                </div>
+              </div>
+              <div
+                style={{
+                  borderRadius: "24px",
+                  border: "1px solid rgba(163, 214, 13, 0.10)",
+                  background: "rgba(255, 255, 255, 0.10)",
+                  backdropFilter: "blur(12.5px)",
+                }}
+                className=" px-5 pt-3 pb-3"
+              >
+                <h4 className=" text-3xl font-semobold text-white/85]">
+                  Auction Ends In
+                </h4>
+                <div className=" flex justify-between  items-center gap-3">
+                  <p className=" text-4xl font-bold text-white">5h</p>
+                  <p className=" text-4xl font-bold text-white">35m</p>
+                  <p className=" text-4xl font-bold text-white">85</p>
+                </div>
+              </div>
+            </div>
+            <div className=" space-y-2">
+              <button className=" bg-[#4B4949] border border-[#4B4949] rounded-full text-white h-12 px-9 w-full justify-center inline-flex items-center text-2xl font-semibold">
+                0 or more
+              </button>
+              <button className=" bg-primary rounded-full text-black h-12 px-9 w-full justify-center inline-flex items-center text-2xl font-semibold">
+                Place Bid
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
-}
+};
+
+export default Home;
