@@ -7,7 +7,7 @@ const Home = () => {
       <div className=" min-h-[80vh] pt-8 xl:pt-0  flex space-y-8 xl:space-y-0 flex-col justify-between">
         <div className=" space-y-5">
           <Image src={"/logo.svg"} alt="logo" width={92} height={70} />
-          <button className=" bg-primary rounded-full h-10 px-9 inline-flex items-center text-2xl font-semibold">
+          <button className=" bg-primary rounded-full h-10 px-9 inline-flex items-center text-sm sm:text-2xl font-semibold">
             Treasury
           </button>
         </div>
@@ -92,7 +92,7 @@ const Home = () => {
                 }}
                 className=" px-5 pt-3 pb-3"
               >
-                <h4 className=" text-3xl font-semobold text-white/85]">
+                <h4 className=" text-xl sm:text-3xl font-semobold text-white/85]">
                   WaterBear 1169
                 </h4>
                 <div className=" inline-flex items-center gap-3">
@@ -112,7 +112,9 @@ const Home = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <span className=" text-4xl font-bold text-white">1.73</span>
+                  <span className=" text-2xl sm:text-4xl font-bold text-white">
+                    1.73
+                  </span>
                 </div>
               </div>
               <div
@@ -124,7 +126,7 @@ const Home = () => {
                 }}
                 className=" px-5 pt-3 pb-3"
               >
-                <h4 className=" text-3xl font-semobold text-white/85]">
+                <h4 className=" text-xl sm:text-3xl font-semobold text-white/85]">
                   Auction Ends In
                 </h4>
                 <div className=" flex justify-between  items-center gap-3">
@@ -135,10 +137,10 @@ const Home = () => {
               </div>
             </div>
             <div className=" space-y-2">
-              <button className=" bg-[#4B4949] border border-[#4B4949] rounded-full text-white h-12 px-9 w-full justify-center inline-flex items-center text-2xl font-semibold">
+              <button className=" bg-[#4B4949] border border-[#4B4949] rounded-full text-white h-12 px-9 w-full justify-center inline-flex items-center text-sm sm:text-2xl font-semibold">
                 0 or more
               </button>
-              <button className=" bg-primary rounded-full text-black h-12 px-9 w-full justify-center inline-flex items-center text-2xl font-semibold">
+              <button className=" bg-primary rounded-full text-black h-12 px-9 w-full justify-center inline-flex items-center text-sm sm:text-2xl font-semibold">
                 Place Bid
               </button>
             </div>

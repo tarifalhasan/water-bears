@@ -42,7 +42,7 @@ const Bids = () => {
                   height={30}
                 />
               </div>
-              <p className=" text-2xl font-semibold">{item.name}</p>
+              <p className=" text-sm sm:text-2xl font-semibold">{item.name}</p>
             </div>
             <div className=" col-span-5 inline-flex items-center gap-7">
               <button>
@@ -65,7 +65,7 @@ const Bids = () => {
                   <rect y={20} width={18} height={2} rx={1} fill="#D9D9D9" />
                 </svg>
               </button>
-              <p className=" text-2xl font-semibold">{item.total}</p>
+              <p className=" text-sm sm:text-2xl font-semibold">{item.total}</p>
               <button>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ const Bids = () => {
           </li>
         ))}
         <li>
-          <button className=" bg-primary rounded-full text-black h-12 px-9 w-full justify-center inline-flex items-center text-2xl font-semibold">
+          <button className=" bg-primary rounded-full text-black h-12 px-9 w-full justify-center inline-flex items-center text-sm sm:text-2xl font-semibold">
             View All Bids
           </button>
         </li>
